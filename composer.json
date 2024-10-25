@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "test": "phpunit"
+    },
+    "require-dev": {
+        "wp-phpunit/wp-phpunit": "^6.6",
+        "phpunit/phpunit": "^9.0",
+        "yoast/phpunit-polyfills": "^1.0"
+    }
+}
