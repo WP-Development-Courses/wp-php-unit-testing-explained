@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<phpunit
+	bootstrap=".config/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	defaultTestSuite="check-config"
+>
+	<testsuites>
+		<testsuite name="check-config">
+			<directory prefix="test-" suffix=".php">.config/tests</directory>
+		</testsuite>
+		<testsuite name="byline-v1">
+			<directory prefix="test-" suffix=".php">byline-v1/tests/</directory>
+			<file>byline-v1/tests/bootstrap.php</file>
+		</testsuite>
+	</testsuites>
+
+	<php>
+		<env name="WP_PHPUNIT__TESTS_CONFIG" value=".config/wp-tests-config.php"/>
+	</php>
+</phpunit>
