@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Example Project" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/PHPCSStandards/PHP_CodeSniffer/master/phpcs.xsd">
+
+	<description>A custom set of rules to check for a WPized WordPress project</description>
+
+	<file>.</file>
+	<!-- Exclude the Composer Vendor directory. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<!-- Strip the filepaths down to the relevant bit. -->
+	<arg name="basepath" value="."/>
+
+	<!-- Check up to 8 files simultaneously. -->
+	<arg name="parallel" value="8"/>
+
+	<rule ref="WordPress-Extra">
+		<!--
+		We may want a middle ground though. The best way to do this is add the
+		entire ruleset, then rule by rule, remove ones that don't suit a project.
+		We can do this by running `phpcs` with the '-s' flag, which allows us to
+		see the names of the sniffs reporting errors.
+		Once we know the sniff names, we can opt to exclude sniffs which don't
+		suit our project like so.
+
+		The below two examples just show how you can exclude rules/error codes.
+		They are not intended as advice about which sniffs to exclude.
+		-->
+
+		<!--
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+		<exclude name="Modernize.FunctionCalls.Dirname.Nested"/>
+		-->
+	</rule>
+</ruleset>
