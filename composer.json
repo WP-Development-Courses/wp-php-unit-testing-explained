@@ -1,10 +1,17 @@
 {
     "scripts": {
+        "sniff": "phpcs -s",
         "test": "phpunit"
     },
     "require-dev": {
         "wp-phpunit/wp-phpunit": "^6.6",
         "phpunit/phpunit": "^9.0",
-        "yoast/phpunit-polyfills": "^1.0"
+        "yoast/phpunit-polyfills": "^1.0",
+        "wp-coding-standards/wpcs": "^3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
