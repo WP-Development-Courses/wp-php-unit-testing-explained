@@ -28,6 +28,10 @@
 			<directory prefix="test-" suffix=".php">byline-v3c/tests/</directory>
 			<file>byline-v3/tests/bootstrap.php</file>
 		</testsuite>
+		<testsuite name="byline-v4">
+			<directory prefix="test-" suffix=".php">byline-v4/tests/</directory>
+			<file>byline-v4/tests/bootstrap.php</file>
+		</testsuite>
 	</testsuites>
 
 	<php>
