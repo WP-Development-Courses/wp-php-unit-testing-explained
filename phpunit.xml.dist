@@ -16,6 +16,10 @@
 			<directory prefix="test-" suffix=".php">byline-v1/tests/</directory>
 			<file>byline-v1/tests/bootstrap.php</file>
 		</testsuite>
+				<testsuite name="byline-v3">
+			<directory prefix="test-" suffix=".php">byline-v3/tests/</directory>
+			<file>byline-v3/tests/bootstrap.php</file>
+		</testsuite>
 	</testsuites>
 
 	<php>
