@@ -24,6 +24,10 @@
 			<directory prefix="test-" suffix=".php">byline-v3b/tests/</directory>
 			<file>byline-v3/tests/bootstrap.php</file>
 		</testsuite>
+		<testsuite name="byline-v3c">
+			<directory prefix="test-" suffix=".php">byline-v3c/tests/</directory>
+			<file>byline-v3/tests/bootstrap.php</file>
+		</testsuite>
 	</testsuites>
 
 	<php>
