@@ -1,7 +1,7 @@
 <?php
 declare( strict_types=1 );
 /*
-* Plugin Name: Byline - V3
+* Plugin Name: Byline
 */
 
 /**
