@@ -44,6 +44,12 @@
 			<directory prefix="test-" suffix=".php">byline-v4c/tests/</directory>
 			<file>byline-v4c/tests/bootstrap.php</file>
 		</testsuite>
+		<testsuite name="exercise-assertions">
+			<directory prefix="test-" suffix=".php">exercise-assertions/tests/</directory>
+		</testsuite>
+		<testsuite name="exercise-assertions-solution">
+			<directory prefix="test-" suffix=".php">exercise-assertions/solution/</directory>
+		</testsuite>
 	</testsuites>
 
 	<php>
