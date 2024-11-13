@@ -1,7 +1,7 @@
 <?php
 declare( strict_types=1 );
 /*
-* Plugin Name: Byline - V1
+* Plugin Name: Byline
 */
 
 /**
@@ -11,6 +11,10 @@ declare( strict_types=1 );
  *
  * @return string Post byline.
  */
-function wput_get_byline( string $author_name ) {
+function wput_get_byline( $author_name ) {
+	if ( ! is_string( $author_name ) ) {
+		return '';
+	}
+
 	return 'Written by ' . $author_name;
 }

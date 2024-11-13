@@ -16,6 +16,34 @@
 			<directory prefix="test-" suffix=".php">byline-v1/tests/</directory>
 			<file>byline-v1/tests/bootstrap.php</file>
 		</testsuite>
+		<testsuite name="byline-v2">
+			<directory prefix="test-" suffix=".php">byline-v2/tests/</directory>
+			<file>byline-v2/tests/bootstrap.php</file>
+		</testsuite>
+		<testsuite name="byline-v3a">
+			<directory prefix="test-" suffix=".php">byline-v3a/tests/</directory>
+			<file>byline-v3a/tests/bootstrap.php</file>
+		</testsuite>
+		<testsuite name="byline-v3b">
+			<directory prefix="test-" suffix=".php">byline-v3b/tests/</directory>
+			<file>byline-v3b/tests/bootstrap.php</file>
+		</testsuite>
+		<testsuite name="byline-v3c">
+			<directory prefix="test-" suffix=".php">byline-v3c/tests/</directory>
+			<file>byline-v3c/tests/bootstrap.php</file>
+		</testsuite>
+		<testsuite name="byline-v4a">
+			<directory prefix="test-" suffix=".php">byline-v4a/tests/</directory>
+			<file>byline-v4a/tests/bootstrap.php</file>
+		</testsuite>
+		<testsuite name="byline-v4b">
+			<directory prefix="test-" suffix=".php">byline-v4b/tests/</directory>
+			<file>byline-v4b/tests/bootstrap.php</file>
+		</testsuite>
+		<testsuite name="byline-v4c">
+			<directory prefix="test-" suffix=".php">byline-v4c/tests/</directory>
+			<file>byline-v4c/tests/bootstrap.php</file>
+		</testsuite>
 	</testsuites>
 
 	<php>
