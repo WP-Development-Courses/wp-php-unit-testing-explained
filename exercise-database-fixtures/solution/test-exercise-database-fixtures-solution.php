@@ -30,8 +30,8 @@ class Test_Exercise_Database_Fixtures_Solution extends WP_UnitTestCase {
 			'current_category' => $category_2_id,
 		] );
 
-		$this->assertNotRegExp( '/class="[^"]*cat-item-' . $category_1_id . '[^"]*current-cat[^"]*"/', $category_list );
-		$this->assertRegExp( '/class="[^"]*cat-item-' . $category_2_id . '[^"]*current-cat[^"]*"/', $category_list );
+		$this->assertDoesNotMatchRegularExpression( '/class="[^"]*cat-item-' . $category_1_id . '[^"]*current-cat[^"]*"/', $category_list );
+		$this->assertMatchesRegularExpression( '/class="[^"]*cat-item-' . $category_2_id . '[^"]*current-cat[^"]*"/', $category_list );
 	}
 
 	/**

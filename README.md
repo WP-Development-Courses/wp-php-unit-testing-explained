@@ -18,3 +18,6 @@ Source code and exercises for the WP PHP Unit Testing Explained course
 
 - Exercise: Using Assertions: `composer run test -- --testsuite=exercise-assertions-solution`
 - Exercise Solution: Using Assertions: `composer run test -- --testsuite=exercise-assertions-solution`
+
+- Exercise: Database fixtures: `composer run test -- --testsuite=exercise-database-fixtures`
+- Exercise Solution: Database fixtures: `composer run test -- --testsuite=exercise-database-fixtures-solution`
