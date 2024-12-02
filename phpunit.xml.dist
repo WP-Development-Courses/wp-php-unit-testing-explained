@@ -44,6 +44,36 @@
 			<directory prefix="test-" suffix=".php">byline-v4c/tests/</directory>
 			<file>byline-v4c/tests/bootstrap.php</file>
 		</testsuite>
+		<testsuite name="exercise-assertions">
+			<directory prefix="test-" suffix=".php">exercise-assertions/tests/</directory>
+		</testsuite>
+		<testsuite name="exercise-assertions-solution">
+			<directory prefix="test-" suffix=".php">exercise-assertions/solution/</directory>
+		</testsuite>
+		<testsuite name="exercise-database-fixtures">
+			<directory prefix="test-" suffix=".php">exercise-database-fixtures/tests/</directory>
+		</testsuite>
+		<testsuite name="exercise-database-fixtures-solution">
+			<directory prefix="test-" suffix=".php">exercise-database-fixtures/solution/</directory>
+		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-1">
+			<directory prefix="test-" suffix="-1.php">exercise-shared-database-fixtures/tests/</directory>
+		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-1-solution">
+			<directory prefix="test-" suffix="-1-solution.php">exercise-shared-database-fixtures/solution/</directory>
+		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-2">
+			<directory prefix="test-" suffix="-2.php">exercise-shared-database-fixtures/tests/</directory>
+		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-2-solution">
+			<directory prefix="test-" suffix="-2-solution.php">exercise-shared-database-fixtures/solution/</directory>
+		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-3">
+			<directory prefix="test-" suffix="-3.php">exercise-shared-database-fixtures/tests/</directory>
+		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-3-solution">
+			<directory prefix="test-" suffix="-3-solution.php">exercise-shared-database-fixtures/solution/</directory>
+		</testsuite>
 	</testsuites>
 
 	<php>

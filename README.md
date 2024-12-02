@@ -13,3 +13,20 @@ Source code and exercises for the WP PHP Unit Testing Explained course
 - V4a: `composer run test -- --testsuite=byline-v4a`
 - V4b: `composer run test -- --testsuite=byline-v4b`
 - V4c: `composer run test -- --testsuite=byline-v4c`
+
+## Exercises
+
+- Exercise: Using Assertions: `composer run test -- --testsuite=exercise-assertions-solution`
+- Exercise Solution: Using Assertions: `composer run test -- --testsuite=exercise-assertions-solution`
+
+- Exercise: Database fixtures: `composer run test -- --testsuite=exercise-database-fixtures`
+- Exercise Solution: Database fixtures: `composer run test -- --testsuite=exercise-database-fixtures-solution`
+
+- Exercise: Shared database fixtures 1: `composer run test -- --testsuite=exercise-shared-database-fixtures-1`
+- Exercise Solution: Database fixtures 1: `composer run test -- --testsuite=exercise-shared-database-fixtures-1-solution`
+
+- Exercise: Shared database fixtures 2: `composer run test -- --testsuite=exercise-shared-database-fixtures-2`
+- Exercise Solution: Database fixtures 2: `composer run test -- --testsuite=exercise-shared-database-fixtures-2-solution`
+
+- Exercise: Shared database fixtures 3: `composer run test -- --testsuite=exercise-shared-database-fixtures-3`
+- Exercise Solution: Database fixtures 3: `composer run test -- --testsuite=exercise-shared-database-fixtures-3-solution`
