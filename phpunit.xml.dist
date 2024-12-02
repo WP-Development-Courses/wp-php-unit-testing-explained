@@ -56,6 +56,12 @@
 		<testsuite name="exercise-database-fixtures-solution">
 			<directory prefix="test-" suffix=".php">exercise-database-fixtures/solution/</directory>
 		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-1">
+			<directory prefix="test-" suffix="-1.php">exercise-shared-database-fixtures/tests/</directory>
+		</testsuite>
+		<testsuite name="exercise-shared-database-fixtures-1-solution">
+			<directory prefix="test-" suffix="-1-solution.php">exercise-shared-database-fixtures/solution/</directory>
+		</testsuite>
 	</testsuites>
 
 	<php>

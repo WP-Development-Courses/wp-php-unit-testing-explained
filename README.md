@@ -21,3 +21,6 @@ Source code and exercises for the WP PHP Unit Testing Explained course
 
 - Exercise: Database fixtures: `composer run test -- --testsuite=exercise-database-fixtures`
 - Exercise Solution: Database fixtures: `composer run test -- --testsuite=exercise-database-fixtures-solution`
+
+- Exercise: Shared database fixtures 1: `composer run test -- --testsuite=exercise-shared-database-fixtures-1`
+- Exercise Solution: Database fixtures 1: `composer run test -- --testsuite=exercise-shared-database-fixtures-1-solution`
