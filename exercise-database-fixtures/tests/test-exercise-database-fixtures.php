@@ -26,14 +26,16 @@ class Test_Exercise_Database_Fixtures extends WP_UnitTestCase {
 		$category_1_id = null;
 		$category_2_id = null;
 
-		$category_list = wp_list_categories( [
-			'hide_empty'       => false,
-			'echo'             => false,
-			'current_category' => $category_2_id,
-		] );
+		$category_list = wp_list_categories(
+			[
+				'hide_empty'       => false,
+				'echo'             => false,
+				'current_category' => $category_2_id,
+			]
+		);
 
-		$this->assertNotRegExp( '/class="[^"]*cat-item-' . $category_1_id . '[^"]*current-cat[^"]*"/', $category_list );
-		$this->assertRegExp( '/class="[^"]*cat-item-' . $category_2_id . '[^"]*current-cat[^"]*"/', $category_list );
+		$this->assertDoesNotMatchRegularExpression( '/class="[^"]*cat-item-' . $category_1_id . '[^"]*current-cat[^"]*"/', $category_list );
+		$this->assertMatchesRegularExpression( '/class="[^"]*cat-item-' . $category_2_id . '[^"]*current-cat[^"]*"/', $category_list );
 	}
 
 	/**
@@ -43,11 +45,13 @@ class Test_Exercise_Database_Fixtures extends WP_UnitTestCase {
 		// Create a user with the nicename set to `maxmustermann`.
 		$user_id = null;
 
-		$users = get_users( [
-			'search' => '*muster*',
-			'fields' => 'ID',
-		] );
+		$users = get_users(
+			[
+				'search' => '*muster*',
+				'fields' => 'ID',
+			]
+		);
 
-		$this->assertTrue( in_array( $user_id, $users ) );
+		$this->assertTrue( in_array( $user_id, $users, true ) );
 	}
 }

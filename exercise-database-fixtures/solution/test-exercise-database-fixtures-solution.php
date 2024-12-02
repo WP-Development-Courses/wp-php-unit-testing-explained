@@ -24,11 +24,13 @@ class Test_Exercise_Database_Fixtures_Solution extends WP_UnitTestCase {
 		$category_1_id = self::factory()->category->create();
 		$category_2_id = self::factory()->category->create();
 
-		$category_list = wp_list_categories( [
-			'hide_empty'       => false,
-			'echo'             => false,
-			'current_category' => $category_2_id,
-		] );
+		$category_list = wp_list_categories(
+			[
+				'hide_empty'       => false,
+				'echo'             => false,
+				'current_category' => $category_2_id,
+			]
+		);
 
 		$this->assertDoesNotMatchRegularExpression( '/class="[^"]*cat-item-' . $category_1_id . '[^"]*current-cat[^"]*"/', $category_list );
 		$this->assertMatchesRegularExpression( '/class="[^"]*cat-item-' . $category_2_id . '[^"]*current-cat[^"]*"/', $category_list );
@@ -38,15 +40,19 @@ class Test_Exercise_Database_Fixtures_Solution extends WP_UnitTestCase {
 	 * Verify that searching for a part of a user's nicename returns the user.
 	 */
 	public function test_search_users_nicename() {
-		$user_id = self::factory()->user->create( [
-			'user_nicename' => 'maxmustermann',
-		] );
+		$user_id = self::factory()->user->create(
+			[
+				'user_nicename' => 'maxmustermann',
+			]
+		);
 
-		$users = get_users( [
-			'search' => '*muster*',
-			'fields' => 'ID',
-		] );
+		$users = get_users(
+			[
+				'search' => '*muster*',
+				'fields' => 'ID',
+			]
+		);
 
-		$this->assertTrue( in_array( $user_id, $users ) );
+		$this->assertTrue( in_array( $user_id, $users, true ) );
 	}
 }
