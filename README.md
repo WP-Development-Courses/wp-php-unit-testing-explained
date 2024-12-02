@@ -13,3 +13,8 @@ Source code and exercises for the WP PHP Unit Testing Explained course
 - V4a: `composer run test -- --testsuite=byline-v4a`
 - V4b: `composer run test -- --testsuite=byline-v4b`
 - V4c: `composer run test -- --testsuite=byline-v4c`
+
+## Exercises
+
+- Exercise: Using Assertions: `composer run test -- --testsuite=exercise-assertions-solution`
+- Exercise Solution: Using Assertions: `composer run test -- --testsuite=exercise-assertions-solution`

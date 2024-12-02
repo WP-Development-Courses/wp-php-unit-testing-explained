@@ -42,11 +42,9 @@ class Test_Exercise_Assertions_Solution extends WP_UnitTestCase {
 			]
 		);
 
-		var_dump( $html);
-
 		// Assert that the shortcode contains the HTTPS URL under the `src` attribute.
 		// The HTML code to look for is `src="https://www.youtube.com/watch?v=i_cVJgIz_Cs`.
-		$this->assertContains( 'src="https://www.youtube.com/watch?v=i_cVJgIz_Cs', $html );
+		$this->assertStringContainsString( 'src="https://www.youtube.com/watch?v=i_cVJgIz_Cs', $html );
 	}
 
 	/**
@@ -62,6 +60,6 @@ class Test_Exercise_Assertions_Solution extends WP_UnitTestCase {
 
 		// Assert that the shortcode does not contain the query arg.
 		// This means there can be no occurrence of `?foo=bar` in the HTML.
-		$this->assertNotContains( '?foo=bar', $html );
+		$this->assertStringNotContainsString( '?foo=bar', $html );
 	}
 }

@@ -1,6 +1,5 @@
 <?php
 
-
 class Test_Exercise_Assertions extends WP_UnitTestCase {
 	public function test_trailingslashit_adds_trailing_slash() {
 		// Expected: 'http://example.com/'
