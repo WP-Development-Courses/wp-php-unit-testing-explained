@@ -1,8 +1,9 @@
 <?php
 declare( strict_types=1 );
-/*
-* Plugin Name: Byline - V3b
-*/
+
+/**
+ * Plugin Name: Byline - V3b
+ */
 
 /**
  * Output the post byline.
